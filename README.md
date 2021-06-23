@@ -16,6 +16,7 @@ The following commands are supported for both Maven and Gradle Quarkus projects:
   * `Quarkus: Generate a Quarkus project`: Generate a Quarkus project, based on https://code.quarkus.io/
   * `Quarkus: Add extensions to current project`: Add Quarkus extensions to currently opened Quarkus project
   * `Quarkus: Debug current Quarkus project`: Launches the Maven `quarkus:dev` plugin or the Gradle `quarkusDev` command and automatically attaches a debugger
+  * `Quarkus: Deploy current Quarkus Project to OpenShift`: Deploys the current project to a connected OpenShift cluster using [OpenShift Connector](https://github.com/redhat-developer/vscode-openshift-tools)
 
 ## Quarkus/MicroProfile `properties` Features
 
