@@ -52,8 +52,7 @@
   "extensionDependencies": [
     "redhat.vscode-microprofile",
     "redhat.java",
-    "vscjava.vscode-java-debug",
-    "redhat.vscode-commons"
+    "vscjava.vscode-java-debug"
   ],
   "contributes": {
     "javaExtensions": [
@@ -147,6 +146,12 @@
     "configuration": {
       "title": "Quarkus Tools",
       "properties": {
+        "redhat.telemetry.enabled": {
+          "type": "boolean",
+          "default": null,
+          "markdownDescription": "Enable usage data and errors to be sent to Red Hat servers. Read our [privacy statement](https://developers.redhat.com/article/tool-data-collection).",
+          "scope": "window"
+        },
         "quarkus.tools.debug.terminateProcessOnExit": {
           "type": "string",
           "enum": [
@@ -292,7 +297,7 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
-    "@redhat-developer/vscode-redhat-telemetry": "0.0.18",
+    "@redhat-developer/vscode-redhat-telemetry": "^0.2.0",
     "ejs": "^2.7.1",
     "expand-home-dir": "0.0.3",
     "find-up": "^4.1.0",
