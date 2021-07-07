@@ -73,11 +73,12 @@
     "languages": [
       {
         "id": "quarkus-properties",
+        "filenamePatterns": [
+          "application.properties",
+          "application-?*.properties"
+        ],
         "aliases": [
           "Quarkus properties"
-        ],
-        "filenames": [
-          "application.properties"
         ],
         "configuration": "./language-support/properties-support/language-configuration.json"
       },
